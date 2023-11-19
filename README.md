@@ -16,4 +16,3 @@ Creative objective: a paragraph detailing the goals your team set out with; the 
 Tech summary: two or three concise, well written, organized paragraphs documenting feature functionality and how it was achieved;
 Member notes: an overview of your work, task to task, and some lessons learned; a detailing of the technologies you used used; a post-mortem -- what did you come away with? What would you do if you could do it again with the benefit of hindsight
 References: any resources your group used to learn about the technologies used
-

@@ -7,6 +7,7 @@ Link to repo(s) on GitHub -- 2 links, one for each group member
 Include a link to group presentation slideshow (can be hosted on GitHub Pages, in a GitHub repo, or as a download on school server)
 Creative objective section -- The goal of the project; the problem you set out to overcome or mission you set out to accomplish
 Tech summary section -- How does it work? Provide high-level overview tools, APIs, npm packages, hooks, .env variables, etc.
+    - https://guides.rubyonrails.org/getting_started.html
 Individual member notes -- One paragraph per member you and your partner: contributions and work (tasks and how achieved)
 Conclusion -- What you learned, what worked, what didn't, what you would do differently or the same.
 References -- A bibliography or listing of work (books, websites, etc.) used in the project.

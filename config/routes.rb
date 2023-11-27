@@ -5,6 +5,9 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   root "counters#index"
-  
-  get "/counters", to: "counters#index"
+
+  get "counters", to: "counters#index"
+  post 'incrementBy1', to: "counters#incrementBy1"
+  post 'incrementBy2', to: "counters#incrementBy2"
+
 end

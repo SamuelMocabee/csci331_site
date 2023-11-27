@@ -1,1 +1,20 @@
-<h1>"Hello, Rails!"</h1>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RubyOnRails</title>
+  </head>
+  <body>
+    <h1>Hello Server!</h1>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas, et!
+    </p>
+  </body>
+    <h2>Increment by 1</h2>
+    <div id="counter">
+        <%= @counter.value %>
+    </div>
+    <%= button_to '+1', incrementBy1_path %>
+    <%= button_to '+2', incrementBy2_path %>
+</html>

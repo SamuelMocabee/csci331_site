@@ -6,7 +6,6 @@
     <title>RubyOnRails</title>
     <%= javascript_include_tag 'turbo' %>
     <%= turbo_include_tags %>
-</head>
   </head>
   <body>
     <h1>Hello RubyOnRails!</h1>
@@ -17,17 +16,18 @@
     <div id="counter_output">
       <%= @counter.value %>
     </div>
+    <div id="buttons">
+      <%= form_tag(incrementBy1_path, method: :post, 'data-turbo-frame': 'counter_output') do %>
+        <%= submit_tag '+1', name: nil %>
+      <% end %>
+      <%= form_tag(incrementBy2_path, method: :post) do %>
+        <%= submit_tag '+2', name: nil %>
+      <% end %>
 
-    <%= form_tag(incrementBy1_path, method: :post, 'data-turbo-frame': 'counter_output') do %>
-      <%= submit_tag '+1', name: nil %>
-    <% end %>
-    <%= form_tag(incrementBy2_path, method: :post) do %>
-      <%= submit_tag '+2', name: nil %>
-    <% end %>
-
-    <%= turbo_frame_tag 'counter_output' do %>
-      <!-- Turbo Stream updates will be inserted here -->
-    <% end %>
+      <%= turbo_frame_tag 'counter_output' do %>
+        <!-- Turbo Stream updates will be inserted here -->
+      <% end %>
+    </div>
 
   </body>
 </html>

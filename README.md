@@ -30,6 +30,7 @@ Tech Summary:
 Tech summary section -- How does it work? Provide high-level overview tools, APIs, npm packages, hooks, .env variables, etc.
     - https://guides.rubyonrails.org/getting_started.html
     - https://github.com/redis/redis-rb
+    - https://turbo.hotwired.dev/handbook/streams
 
 Individual Notes:
 Individual member notes -- One paragraph per member you and your partner: contributions and work (tasks and how achieved)

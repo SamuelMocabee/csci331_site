@@ -4,23 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RubyOnRails</title>
+    <%= javascript_include_tag 'turbo' %>
+    <%= turbo_include_tags %>
+</head>
   </head>
   <body>
-    <h1>Hello Server!</h1>
+    <h1>Hello RubyOnRails!</h1>
     <p>
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas, et!
+      We've implemented a simple counter using Kredis and Turbo Streams below.
     </p>
-    <h2>Increment by 1</h2>
-    <div id='counter'>
-        <%= @counter.value %>
-    <turbo-stream action="update" target="counters">
-      <template>
-        <div id="counter_output">
-          <%= @counter.value %>    
-        </div>
-      </template>
-    </turbo-stream>
-    <%= button_to '+1', incrementBy1_path %> 
-    <%= button_to '+2', incrementBy2_path %>
+    <h2>Kredis Counter</h2>
+    <div id="counter_output">
+      <%= @counter.value %>
+    </div>
+
+    <%= form_tag(incrementBy1_path, method: :post, 'data-turbo-frame': 'counter_output') do %>
+      <%= submit_tag '+1', name: nil %>
+    <% end %>
+    <%= form_tag(incrementBy2_path, method: :post) do %>
+      <%= submit_tag '+2', name: nil %>
+    <% end %>
+
+    <%= turbo_frame_tag 'counter_output' do %>
+      <!-- Turbo Stream updates will be inserted here -->
+    <% end %>
+
   </body>
 </html>

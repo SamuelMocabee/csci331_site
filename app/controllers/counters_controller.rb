@@ -22,16 +22,6 @@ class CountersController < ApplicationController
     @counter ||= Kredis.counter 'mycounter'
   end
 
-  def stream_counter
-    # redirect_to root_path
-    respond_to do |format|
-      format.turbo_stream do
-        render turbo_stream: turbo_stream.update('counter_output', html: counter.value)
-      end
-      format.html { redirect_to root_path }
-    end  
-  end
-
   def tenMax
     if counter.value > 10
       while counter.value > 0
@@ -39,4 +29,21 @@ class CountersController < ApplicationController
       end
     end
   end
+
+  def stream_counter
+    respond_to do |format|
+      format.turbo_stream do
+        # Rails.logger.debug("Updating counter with value: #{counter.value}")
+        render turbo_stream: turbo_stream.update('counter_output', html: counter.value)
+      end
+  
+      format.html do
+        # Rails.logger.debug("Rerendering the root")
+        # Do not perform a redirect for HTML requests
+        render :stream_counter
+      end
+    end
+  end
+  
+
 end

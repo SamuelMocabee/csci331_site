@@ -10,7 +10,9 @@ This site will be a recreation of Node.js project but using the Ruby on Rails co
 This site contains two counters that increment by 1, and 2. Also the site will display ___ using API calls.
 
 How to Run (Description on how to run the rerver and observe the site):
-
+- Start the Redis client from the command line (for windows use wsl) 'redis-cli')
+- Start the rails server from the command line using 'rails s'
+- Open browser to localhost:3000
 
 Project Link:
 Link to Project* -- a URL link(s) to the hosted site -- preferably on school server (2 links, one for each group member)
@@ -27,6 +29,7 @@ Creative objective section -- The goal of the project; the problem you set out t
 Tech Summary:
 Tech summary section -- How does it work? Provide high-level overview tools, APIs, npm packages, hooks, .env variables, etc.
     - https://guides.rubyonrails.org/getting_started.html
+    - https://github.com/redis/redis-rb
 
 Individual Notes:
 Individual member notes -- One paragraph per member you and your partner: contributions and work (tasks and how achieved)

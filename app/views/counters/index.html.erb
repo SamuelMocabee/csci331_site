@@ -10,11 +10,17 @@
     <p>
       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas, et!
     </p>
-  </body>
     <h2>Increment by 1</h2>
-    <div id="counter">
+    <div id='counter'>
         <%= @counter.value %>
-    </div>
-    <%= button_to '+1', incrementBy1_path %>
+    <turbo-stream action="update" target="counters">
+      <template>
+        <div id="counter_output">
+          <%= @counter.value %>    
+        </div>
+      </template>
+    </turbo-stream>
+    <%= button_to '+1', incrementBy1_path %> 
     <%= button_to '+2', incrementBy2_path %>
+  </body>
 </html>

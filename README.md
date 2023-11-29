@@ -96,3 +96,5 @@ Works Cited:
 - SupeRails. Rails 7 #113 Kredis Live Counter, HTTP vs Websocket Turbo Broadcasts. YouTube, 22 Feb. 2023, https://www.youtube.com/watch?v=hWzBy4eA8Ww.
 
 - “Turbo Handbook.” Turbo: The Speed of a Single-Page Web Application without Having to Write Any JavaScript., https://turbo.hotwired.dev/handbook/streams. Accessed 29 Nov. 2023.
+
+- https://guides.cocoapods.org/using/a-gemfile.html 

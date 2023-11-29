@@ -10,6 +10,61 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
- *= require_tree .
- *= require_self
  */
+ body {
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  color: #cc0000;
+}
+
+h2 {
+  text-align: center;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+#counter_output {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+#buttons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+form {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+input[type="submit"] {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #0066cc;
+  color: #fff;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #004080;
+}
+
+#lists, #links {
+  display: inline-flexbox;
+  text-align: left;
+}
+

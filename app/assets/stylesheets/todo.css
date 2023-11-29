@@ -1,0 +1,74 @@
+table{
+    border: 1px solid;
+    border-collapse: collapse;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  tr, th, td{
+    font-size: 15px;
+    width: 100px;
+    padding: 10px;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    text-align: center;
+  }
+  
+  .table-secondary{
+    background-color: lightgrey;
+  }
+  
+  .completed{
+    width: 250px;
+    text-decoration: line-through;
+    text-align: left;
+  }
+  
+  .uncompleted{
+    width: 250px;
+    text-align: left;
+  }
+  
+  .todo{
+    text-align: left;
+    text-decoration: underline;
+  }
+  
+  .todoLinks{
+    text-align: left;
+    padding: 10px;
+  }
+  
+  .notice{
+    border: 1px solid rgba(36, 241, 6, 0.46);
+    background-color: rgba(7, 149, 66, 0.12156862745098039);
+    box-shadow: 0px 0px 2px #259c08;
+    color: #0ad406;
+    text-align: left;
+  }
+  
+  .notice:hover{
+    background-color: rgba(7, 149, 66, 0.35);
+    transition:0.5s;
+  }
+  
+  input[type='submit']{
+    padding: 4px;
+    padding-right: 10px;
+    font-size: 15px;
+    background-color: whitesmoke;
+    color: black;
+    border: black;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+  }
+
+  input[type='submit']:hover {
+    background-color: gray;
+  }
+  
+  
+  

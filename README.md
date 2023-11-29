@@ -16,11 +16,10 @@ How to Run (Description on how to run the rerver and observe the site):
 - Open browser to localhost:3000
 
 Project Link:
-Link to Project* -- a URL link(s) to the hosted site -- preferably on school server (2 links, one for each group member)
+-TODO Link to Project* -- a URL link(s) to the hosted site -- preferably on school server (2 links, one for each group member)
 
 School Server Link
-- dsfkjaslfk
-
+-TODO
 
 GitHub Link:
 Link to repo(s) on GitHub -- 2 links, one for each group member
@@ -55,6 +54,7 @@ Individual Notes:
 Individual member notes -- One paragraph per member you and your partner: contributions and work (tasks and how achieved)
 
 Samuel Mocabee Notes: 
+- Major contributions include technical documentation, implementing Kredis counter, implementing the TODO page. 
 - Scaffold is a useful tool to implement database structures.
 - Kinda difficult to use on already created projects.
 - Scaffold creates the controllers, needed html files, data structure, links. Only thing to implement after generating is the routes to a html index.
@@ -62,7 +62,12 @@ Samuel Mocabee Notes:
 - Ruby is a bit difficult to update elements without refreshing page. 
 
 Annie Sisk Notes: 
-- 
+- Major contributions include initial Rails web app setup/commit, implementing Turbo Frames and Streams for the counter, researching the technology, and building presentation slides. 
+- The Rails framework was more robust that I expected
+- initial setup was relatively simple and the initial page displayed with few setup steps
+- option of sending HTML over the wire to render the web page is interesting
+- The way Rails applies the CSS globally based on the assets folder contents has pros and cons
+- I was suprised at how little Javascript was needed to build the web app features (there's no .js files in the project)
 
 Conclusion:
 Conclusion -- What you learned, what worked, what didn't, what you would do differently or the same.
@@ -71,7 +76,7 @@ Samuel Mocabee Conclusion:
 - Overall I learned a lot about the basic Ruby on Rails framework and the additonal add on that can be included in the gem file. For instance Kredis was a redis wrapped addon built for ruby that we decided to showcase and implement last minute. With that we also learned a lot about the scaffold commands and how it generates database structures directly into your project. With how in depth the web framework is there is plenty we didn't showcase and learn about ruby, and one thing I would do differently is to implement the database first in the project. For some reason it was rather difficult to add it after creating the initial counters. 
 
 Annie Sisk Conclusion:
-- 
+- My curiosity is piqued and I'm eager to continue exploring the Rails framework. It's quite different than the other web app tech that we discussed this semester, though equally complex. The developer community seems really great and the technical documentation is good. I found the inline html scripting similar in terms of readability to PHP, which was somewhat disappointing. The scope of what the framework can do is far greater than we had time to explore so while the web app came together quickly, my understanding of how the framework works is limited. 
 
 References:
 References -- A bibliography or listing of work (books, websites, etc.) used in the project.

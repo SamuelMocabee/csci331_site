@@ -18,8 +18,10 @@ How to Run (Description on how to run the rerver and observe the site):
 Project Link:
 -TODO Link to Project* -- a URL link(s) to the hosted site -- preferably on school server (2 links, one for each group member)
 
-School Server Link
--TODO
+School Server Link / Video link
+Samuel Mocabee: 
+- https://youtu.be/ocVxLW5oizI
+
 
 GitHub Link:
 Link to repo(s) on GitHub -- 2 links, one for each group member
